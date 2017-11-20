@@ -13,7 +13,7 @@ class TestTodo(TransactionCase):
         # Test Toggle Done
         task.do_toggle_done()
         self.assertTrue(task.is_done)
-        # Test Clear Done
+        # Test Clear Done test
         Todo.do_clear_done()
         self.assertFalse(task.active)
 
